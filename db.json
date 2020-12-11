@@ -1,0 +1,26 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "hello"
+    },
+    {
+        "id": 2,
+        "title": "world"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "gets": [
+      {
+          "id": 1,
+          "name": "张良"
+      },
+      {
+          "id": 2,
+          "name": "韩信"
+      }
+
+  ]
+}
