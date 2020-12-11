@@ -1,26 +1,58 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "hello"
-    },
-    {
-        "id": 2,
-        "title": "world"
+  "router": {
+    data: [
+      {
+        id: 101,
+        authName: '商品管理',
+        path: null,
+        pid: 0,
+        children: [
+          {
+            id: 104,
+            authName: '商品列表',
+            path: null,
+            pid: 101,
+            children: [
+              {
+                id: 105,
+                authName: '添加商品',
+                path: null,
+                pid: '104,101'
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    meta: {
+      msg: '获取权限列表成功',
+      status: 200
     }
-  ],
+  },
   "profile": {
     "name": "typicode"
   },
-  "gets": [
+  "hreo": [
       {
           "id": 1,
+          "type": "法师",
           "name": "张良"
       },
       {
           "id": 2,
-          "name": "韩信"
+          "type": "刺客",
+          "name": "兰陵王"
+      },
+      {
+          "id": 3,
+          "type": "射手",
+          "name": "百里守约"
+      },
+    
+      {
+          "id": 4,
+          "type": "坦克",
+          "name": "程咬金"
       }
-
   ]
 }
