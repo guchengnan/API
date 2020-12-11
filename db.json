@@ -1,58 +1,82 @@
 {
-  "router": {
-    data: [
-      {
-        id: 101,
-        authName: '商品管理',
-        path: null,
-        pid: 0,
-        children: [
-          {
-            id: 104,
-            authName: '商品列表',
-            path: null,
-            pid: 101,
-            children: [
-              {
-                id: 105,
-                authName: '添加商品',
-                path: null,
-                pid: '104,101'
-              }
-            ]
-          }
-        ]
-      }
-    ],
-    meta: {
-      msg: '获取权限列表成功',
-      status: 200
-    }
-  },
-  "profile": {
-    "name": "typicode"
-  },
-  "hreo": [
-      {
-          "id": 1,
-          "type": "法师",
-          "name": "张良"
-      },
-      {
-          "id": 2,
-          "type": "刺客",
-          "name": "兰陵王"
-      },
-      {
-          "id": 3,
-          "type": "射手",
-          "name": "百里守约"
-      },
-    
-      {
-          "id": 4,
-          "type": "坦克",
-          "name": "程咬金"
-      }
-  ]
+	"router": {
+		"data": [{
+			"id": 101,
+			"authName": "首页",
+			"path": "/"
+		}, {
+			"id": 102,
+			"authName": "我的工作台",
+			"path": "/workbench",
+			"children": [{
+				"id": 1021,
+				"pid": 102,
+				"authName": "我的项目",
+				"path": "/project"
+			},{
+				"id": 1022,
+				"pid": 102,
+				"authName": "我的任务",
+				"path": "/task"
+			},{
+				"id": 1023,
+				"pid": 102,
+				"authName": "我的消息",
+				"path": "/tidings"
+			},{
+				"id": 1024,
+				"pid": 102,
+				"authName": "我的督办",
+				"path": "/supervise"
+			}]
+		},{
+			"id": 103,
+			"authName": "全局视图",
+			"path": "/globalview",
+			"children": [{
+				"id": 1031,
+				"pid": 103,
+				"authName": "项目视图",
+				"path": "/project"
+			},{
+				"id": 1032,
+				"pid": 103,
+				"authName": "部门视图",
+				"path": "/department"
+			},{
+				"id": 1033,
+				"pid": 103,
+				"authName": "领导试图",
+				"path": "/leader"
+			}]
+		}],
+		"meta": {
+			"msg": "获取权限列表成功",
+			"status": 200
+		}
+	},
+	"profile": {
+		"name": "typicode"
+	},
+	"hreo": [{
+			"id": 1,
+			"type": "法师",
+			"name": "张良"
+		},
+		{
+			"id": 2,
+			"type": "刺客",
+			"name": "兰陵王"
+		},
+		{
+			"id": 3,
+			"type": "射手",
+			"name": "百里守约"
+		},
+		{
+			"id": 4,
+			"type": "坦克",
+			"name": "程咬金"
+		}
+	]
 }
